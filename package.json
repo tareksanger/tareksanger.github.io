@@ -11,7 +11,7 @@
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16"
   },
-  "homepage": "http://tareksanger.github.io",
+  "homepage": "http://tareksanger.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
