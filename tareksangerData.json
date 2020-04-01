@@ -53,9 +53,11 @@
           "company":"Ekos Research Associates Inc",
           "title": "Freelance App Developer",
           "years": "Novemeber 2019 - April 2020",
-          "description": ["Leading a small team to build a React Native Survey App for the Probit research panel.", 
+          "description": [
+            "Leading a small team to build a React Native Survey App for the Probit research panel.", 
             "Working with the client to help them build a mobile friendly solution for their panels web application.", 
-            "Managing queries to the MySQL database to handle and update user and survey data."],
+            "Developed and Deployed a NodeJS backend with REST services to handle queries and transfer data to and from the app and the MySQL database."
+          ],
             "key": 101
 
         }, 
@@ -63,7 +65,8 @@
           "company":"Tarek Sanger",
           "title": "Freelance Web Developer",
           "years": "April 2018 - Present",
-          "description": ["Worked for the past two years within Ottawa, developing and refurbishing websites for small business",
+          "description": [
+            "Worked for the past two years within Ottawa, developing and refurbishing websites for small business",
              "Preformed site validations by testing JavaScript, CSS3, and HTML5 to ensure cross-platform compatibility.", 
              "Used AWS and Heroku for hosting web applications.",
             "Designed UI/UX wireframes, mockups and Illustrations using Adobe products like Adobe XD, Adobe Illustrator and Photoshop."],
