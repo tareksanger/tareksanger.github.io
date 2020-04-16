@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Link, animateScroll as scroll, } from 'react-scroll'
+import React, { useState } from 'react';
+import { animateScroll as scroll, } from 'react-scroll'
 import '../stylesheets/footer.css'
 // import Swing from 'react-reveal/Swing';
 import Wobble from 'react-reveal/Wobble';
@@ -13,7 +13,7 @@ export default function Footer({ data, ...props }) {
         setLetsTalk(!letsTalk)
     }
 
-    const createNetwork = (social) =>{
+    const createNetwork = (social) => {
         return social.map(function (network) {
             return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
         })
@@ -55,24 +55,22 @@ export default function Footer({ data, ...props }) {
                 <div className="column large-5">
                     <div className="footer-contacts">
                         <Fade bottom big>
-                        <div className="footer-contact-block">
-                            <h5 className="footer-contact-block__header">
-                                Email
+                            <div className="footer-contact-block">
+                                <h5 className="footer-contact-block__header">
+                                    Email
                             </h5>
-                            <p className="footer-contact-block__content">
-                                <a href={"mailto:" + data.email}>{data.email}</a>
-                            </p>
-                        </div>
+                                <p className="footer-contact-block__content">
+                                    <a href={"mailto:" + data.email}>{data.email}</a>
+                                </p>
+                            </div>
                         </Fade>
                         <Fade bottom big>
-                        <div className="footer-contact-block" >
-                            <h5 className="footer-contact-block__header">
-                                Phone
-                        </h5>
-                            <p className="footer-contact-block__content">
-                                <a href={"tel:" + data.phone}>{data.phone}</a>
-                            </p>
-                        </div>
+                            <div className="footer-contact-block" >
+                                <h5 className="footer-contact-block__header">Phone</h5>
+                                <p className="footer-contact-block__content">
+                                    <a href={"tel:" + data.phone}>{data.phone}</a>
+                                </p>
+                            </div>
                         </Fade>
 
 
@@ -97,9 +95,8 @@ export default function Footer({ data, ...props }) {
 
             <div className="row s-footer__bottom">
                 <div className="column large-full ss-copyright">
-                <span>© Copyright Ethos 2019</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-            </div> 
+                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> & Tarek Sanger</span>
+                </div>
 
                 <div className="ss-go-top">
                     <a title="Back to Top" href='/#' onClick={scroll.scrollToTop}>

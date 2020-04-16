@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ReactGA from 'react-ga'
 import $ from 'jquery';
-import { Loading, Navbar, Header, About, Footer } from './components'
+import { Loading, Navbar, Header, About, Skills, Portfolio, Footer } from './components'
 import './stylesheets/base.css';
 import './stylesheets/main.css';
-import './stylesheets/vendor.css';
 
 ReactGA.initialize('UA-161736507-1')
 ReactGA.pageview(window.location.pathname + window.location.search)
@@ -89,7 +88,6 @@ export default function App() {
     $('#hero').css({ 'height': $(window).height() });
     $('body').css({ 'width': $(window).width() })
 
-
     window.addEventListener('scroll', handleScroll)
 
     if ($(window).scrollTop() >= pxShow) $(".ss-go-top").addClass('link-is-visible');
@@ -104,14 +102,13 @@ export default function App() {
         <Loading />
         :
         <div>
-          <Navbar data={data.main} sections={['about', 'resume',
-            // 'portfolio', 
+          <Navbar data={data.main} sections={['about', 'resume', 'skills',
+            'portfolio', 
             'contact']} />
           <Header data={data.main} />
           <About data={data.about} />
-          {/*
-      <Portfolio data={data.Porfolio}/>
-      <Contact data={data.main} /> */}
+          <Skills data={data.skills} />
+          <Portfolio data={data.portfolio} />
           <Footer data={data.main} />
 
 

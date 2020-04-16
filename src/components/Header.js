@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import $ from 'jquery';
 import '../stylesheets/hero.css'
-import { Link, animateScroll as scroll, } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
-// import logo from '../logo.svg';
 
 export default function Header({ data, ...props }) {
+    
     const createNetwork = (social) => {
         return social.map(function (network) {
             return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
@@ -14,11 +14,14 @@ export default function Header({ data, ...props }) {
     }
 
     useEffect(() => {
-        $('#hero').css({ 'height': $(window).height() });
+        $('#hero').css({ 'height': $(window).height()});
     }, [])
 
+    
     return (
-        <section id="hero" className="s-hero target-section"
+        <section 
+            id="hero" 
+            className="s-hero target-section"
             style={{ backgroundImage: "url('images/hero-bg-3000.jpg')", backgroundSize: 'cover', backgroundPosition: "center center" }}
         >
 

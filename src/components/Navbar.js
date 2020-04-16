@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link, animateScroll as scroll, } from 'react-scroll'
 import $ from 'jquery'
 import logo from '../logo.svg'
@@ -31,10 +31,6 @@ export default function Navbar({ data, sections = [], ...props }) {
         })
         )
     }
-
-    useEffect(() => {
-        console.log(sections)
-    }, [])
 
     const stretchMe = () => {
         setStretch(!stretch)

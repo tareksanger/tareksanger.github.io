@@ -77,7 +77,6 @@
   .ss-copyright {
     z-index: 2;
     position: relative;
-    visibility: hidden;
   }
 
   .ss-copyright:hover {

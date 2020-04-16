@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import '../stylesheets/about.css'
 import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 import Zoom from 'react-reveal/Zoom';
 import Tada from 'react-reveal/Tada';
 
 export default function About({ data, ...props }) {
 
-    let [imageShake, setImageShake] = useState(true)
-
+    const [imageShake, setImageShake] = useState(true)
+    const [showOtherXP, setOtherXP] = useState(false)
 
     const handleMouseOverImg = () => {
         setImageShake(!imageShake)
@@ -15,10 +16,16 @@ export default function About({ data, ...props }) {
 
     const experience = (experience) => {
         return experience.map(function (job) {
+            let fadeProps = {}
+            if(job.key > 199) { 
+                fadeProps['collapse'] = true
+                fadeProps['when'] = showOtherXP
+            }
+
+
             return (
-                
-                    <div className="column" key={job.key}>
-                    <Fade right >
+                <Fade right {...fadeProps} key={job.key}>
+                    <div className="column">
                         <div className="position">
                             <div className="position__header">
                                 <h6>
@@ -39,11 +46,20 @@ export default function About({ data, ...props }) {
                             )}
 
                         </div>
-                        </Fade>
+
+
                     </div>
-                
+
+
+                </Fade>
+
             )
         })
+    }
+
+    const handleOtherClick = (event) => {
+        event.preventDefault();
+        setOtherXP(!showOtherXP)
     }
 
     return (
@@ -51,7 +67,7 @@ export default function About({ data, ...props }) {
 
             <div className="s-about__section s-about__section--profile">
 
-                <div className="right-vert-line"></div>
+                <div className="right-vert-line"/>
 
                 <div className="row">
 
@@ -59,8 +75,7 @@ export default function About({ data, ...props }) {
                         <Fade left>
                             <div className="section-intro" data-num="01">
                                 <h3 className="subhead">About Me</h3>
-                                <h1 className="display-1">I'm the kind of person who isn't afraid of challenges.</h1>
-
+                                <h1 className="display-1">{data.intro_header}</h1>
                             </div>
 
                         </Fade>
@@ -68,17 +83,14 @@ export default function About({ data, ...props }) {
                         <div className="profile-pic">
                             <Zoom big>
                                 <Tada spy={imageShake}>
-                                    <img src={data.image} alt="tarek sanger" onMouseOver={handleMouseOverImg} onTouchStart={handleMouseOverImg} onTouchMove={handleMouseOverImg}/>
+                                    <img src={data.image} alt="tarek sanger" onMouseOver={handleMouseOverImg} onTouchStart={handleMouseOverImg} onTouchMove={handleMouseOverImg} />
                                 </Tada>
                             </Zoom>
                         </div>
 
                         <Fade right>
                             <h3>Profile</h3>
-
-                            <p>
-                                {data.bio}
-                            </p>
+                            <p>{data.bio}</p>
                         </Fade>
 
 
@@ -111,11 +123,13 @@ export default function About({ data, ...props }) {
 
 
                 <div className="row block-large-1-2 block-900-full work-positions">
-
-                    {experience(data.experience)}
-
+                    {experience([...data.experience, ...data.otherExperience])}
                 </div>
-
+                <div className="row" style={{visibility: 'hidden'}}>
+                    <Flip right>
+                       <div className="btn btn--primary btn--medium btn--pill" onClick={handleOtherClick}>{(!showOtherXP) ? 'Show ' : 'Hide '}Other Experience</div> 
+                    </Flip>
+                </div>
             </div>
         </section>
     )
