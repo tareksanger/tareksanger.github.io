@@ -55,12 +55,11 @@
           "title": "Freelance App Developer",
           "years": "Novemeber 2019 - April 2020",
           "description": [
-            "Leading a small team to build a React Native Survey App for the Probit research panel.", 
-            "Working with the client to help them build a mobile friendly solution for their panels web application.", 
-            "Developed and Deployed a NodeJS backend with REST services to handle queries and transfer data to and from the app and the MySQL database."
+            "Designed and Developed a mobile app using React Native (front-end), NodeJS (back-end), Apache and Ubuntu (server) and MySQL (database) that connects the client’s members to their accounts. This allows users to login to their profiles, complete surveys and update their information from their mobile devices",
+            "Assisted the client’s team of developers with the project handover. Taught the team the tools required to update the project by creating and uploading the binaries for both iOS and Android, the command line tools used for the Ubuntu and Apache server, as well as reviewing the projects documentation and made updates and clarifications where required.", 
+            "Provided continued support for both the App Store and Google Play communications and the backend server."
           ],
             "key": 101
-
         }, 
         {
           "company":"Tarek Sanger",
@@ -69,7 +68,8 @@
           "description": [
             "Worked for the past two years within Ottawa, developing and refurbishing websites for small business",
             "Used AWS and Heroku for hosting web applications.",
-            "Designed UI/UX wireframes, mockups and Illustrations using Adobe products like Adobe XD, Adobe Illustrator and Photoshop."],
+            "Designed UI/UX wireframes, mockups and Illustrations using Adobe products like Adobe XD, Adobe Illustrator and Photoshop."
+          ],
             "key": 102
         }
       
@@ -79,9 +79,9 @@
         "company":"D&D Tree Service",
         "title": "Seasonal Groundman and Arborist",
         "years": "April 2018 - October 2019",
-        "description": ["Assisted in tree cutting, grounds safety and equipment maintenance for chainsaws, woodchippers and trucks.",
+        "description": [
+          "Assisted in tree cutting, grounds safety and equipment maintenance for chainsaws, woodchippers and trucks.",
            "Maintained strong communication with team members at all times to ensure workplace safety and successful execution of each tree removal."
-           
            ],
            "key": 201
           
@@ -106,7 +106,7 @@
             "C", "C++", "Python", "Swift", "Java", "JavaScript", "React", 
             "React Native", "CSS", "HTML5", "RESTFul", "Node.js", "Git",
             "MySQL", "MongoDB", "DynamoDB", "Linux", "Prolog", "Haskell",
-            "jQuery", "AWS", "Redux", "Nginx", "NPM"
+            "jQuery", "AWS", "Redux", "Nginx", "NPM", "Apache", "Flask (Python)"
           ]
       },
    "portfolio": {
