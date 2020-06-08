@@ -110,21 +110,37 @@
           ]
       },
    "portfolio": {
-        "intro_header": "A couple of the projects I've worked on.",
+        "intro_header": "Some of the projects I've worked on.",
         "apps": [
           {
             "name": "BlastStroids",
-            "url": "https://apps.apple.com/ca/app/blaststroids/id1277302723",
+            "url": {
+              "ios": "https://apps.apple.com/ca/app/blaststroids/id1277302723"
+            },
             "image": "images/BlastStroids_App_Icon.png",
+            "description": "An iOS game I developed over the summer after my first year of Computer Science. The game is a recreation of the 80s arcade game Asteroids with a few personal touches.",
             "type": 2
 
           }, 
           {
             "name": "Loci",
-            "url": "https://apps.apple.com/ca/app/loci/id1506400519",
+            "url": {
+              "ios":"https://apps.apple.com/ca/app/loci/id1506400519"
+            },
             "image": "images/Loci_app_icon.png",
+            "description": "A react Native app I developed as a group project. The app was a study tool, and was primarily a flashcard app with a series of different features. Due to the cost of hosting the app was pulled, however if you are intested in seeing the code feel free to contact me and I'll send you an invite to the Github Repo.",
             "type": 2
         
+          },
+
+          {
+            "name": "Probit Panel",
+            "url": { 
+              "android": "https://play.google.com/store/apps/details?id=com.probitpanelapp"
+            },
+            "image": "images/Probit_App_Icon.png",
+            "description": "",
+            "type": 2
           }
         ],
         "websites": [
