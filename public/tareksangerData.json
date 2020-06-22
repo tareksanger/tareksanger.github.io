@@ -1,0 +1,164 @@
+{
+   "main": {
+       "name": "Tarek Sanger",
+        "occupation": "Software Engineer & Developer",
+        
+        "contactmessage": "",
+        "email": "tarek.sanger@me.com",
+        "phone": "(613)795-3308",
+        "address": {
+            "city": "Ottawa",
+            "province": "Ontario"
+        },
+
+        "social":[
+            {
+              "name":"facebook",
+              "url":"https://www.facebook.com/tarek.sanger",
+              "className":"fa fa-facebook"
+            },
+            {
+              "name":"linkedin",
+              "url":"https://www.linkedin.com/in/tarek-sanger-b9a22287/",
+              "className":"fa fa-linkedin"
+            },
+            {
+              "name":"instagram",
+              "url":"https://www.instagram.com/tareksanger/",
+              "className":"fa fa-instagram"
+            },
+            {
+              "name":"github",
+              "url":"http://github.com/tareksanger",
+              "className":"fa fa-github"
+            }
+          ]
+
+   },
+   "about": {
+     "image":"images/tarek_sanger_profile_pic.jpg",
+      "bio":"When I was a kid growing up in my parents art studio, I fell in love with the idea that I could create anything I could imagine - Then I started programming and realized how limitless creating could really be.",
+      "intro_header": "I'm the kind of person who isn't afraid of challenges.",
+      "education": [
+           {
+               "school": "Carleton University",
+               "degree": "Bachelor of Computer Science, Honours",
+               "startDate": "2016",
+               "endDate": "2021",
+               "complete": 0,
+               "key": 1
+           }
+       ],
+       "experience":[
+        {
+          "company":"Ekos Research Associates Inc",
+          "title": "Freelance App Developer",
+          "years": "Novemeber 2019 - April 2020",
+          "description": [
+            "Designed and Developed a mobile app using React Native (front-end), NodeJS (back-end), Apache and Ubuntu (server) and MySQL (database) that connects the client’s members to their accounts. This allows users to login to their profiles, complete surveys and update their information from their mobile devices",
+            "Assisted the client’s team of developers with the project handover. Taught the team the tools required to update the project by creating and uploading the binaries for both iOS and Android, the command line tools used for the Ubuntu and Apache server, as well as reviewing the projects documentation and made updates and clarifications where required.", 
+            "Provided continued support for both the App Store and Google Play communications and the backend server."
+          ],
+            "key": 101
+        }, 
+        {
+          "company":"Tarek Sanger",
+          "title": "Freelance Web Developer",
+          "years": "April 2018 - Present",
+          "description": [
+            "Worked for the past two years within Ottawa, developing and refurbishing websites for small business",
+            "Used AWS and Heroku for hosting web applications.",
+            "Designed UI/UX wireframes, mockups and Illustrations using Adobe products like Adobe XD, Adobe Illustrator and Photoshop."
+          ],
+            "key": 102
+        }
+      
+      ],
+       "otherExperience": [        
+         {
+        "company":"D&D Tree Service",
+        "title": "Seasonal Groundman and Arborist",
+        "years": "April 2018 - October 2019",
+        "description": [
+          "Assisted in tree cutting, grounds safety and equipment maintenance for chainsaws, woodchippers and trucks.",
+           "Maintained strong communication with team members at all times to ensure workplace safety and successful execution of each tree removal."
+           ],
+           "key": 201
+          
+          },
+          {
+            "company":"Costco Wholesale",
+            "title": "Seasonal Merchandiser",
+            "years": "October 2016 - January 2018",
+            "description": ["During service hours I would help customers to find any product we had in-stock and assist with any inquiries whenever possible.",
+               "Assisted in strategically placing stock and planning the floor.",
+               "Responsible for restocking, facing and preparing any displays for the following day."
+               ],
+               "key": 202
+              
+              }
+      ]
+       
+   },
+    "skills": {
+          "intro_header": "I'm always learning and expanding my knowledge in design and development tools.",
+          "list": [
+            "C", "C++", "C#", "Python", "Swift", "Java", "JavaScript", "React", 
+            "React Native", "CSS", "HTML5", "RESTFul", "Node.js", "Git",
+            "MySQL", "MongoDB", "DynamoDB", "Linux", "Prolog", "Haskell",
+            "jQuery", "AWS", "Redux", "Nginx", "NPM", "Apache", "Flask (Python)"
+          ]
+      },
+   "portfolio": {
+        "intro_header": "Some of the projects I've worked on.",
+        "apps": [
+          {
+            "name": "BlastStroids",
+            "url": {
+              "ios": "https://apps.apple.com/ca/app/blaststroids/id1277302723"
+            },
+            "image": "images/BlastStroids_App_Icon.png",
+            "description": "An iOS game I developed over the summer after my first year of Computer Science. The game is a recreation of the 80s arcade game Asteroids with a few personal touches.",
+            "type": 2
+
+          }, 
+          {
+            "name": "Loci",
+            "url": {
+              "ios":"https://apps.apple.com/ca/app/loci/id1506400519"
+            },
+            "image": "images/Loci_app_icon.png",
+            "description": "A react Native app I developed as a group project. The app was a study tool, and was primarily a flashcard app with a series of different features. Due to the cost of hosting the app was pulled, however if you are intested in seeing the code feel free to contact me and I'll send you an invite to the Github Repo.",
+            "type": 2
+        
+          },
+
+          {
+            "name": "Probit Panel",
+            "url": { 
+              "android": "https://play.google.com/store/apps/details?id=com.probitpanelapp"
+            },
+            "image": "images/Probit_App_Icon.png",
+            "description": "",
+            "type": 2
+          }
+        ],
+        "websites": [
+          {
+            "name": "D&D Tree Service",
+            "url": "https://www.danddtreeservice.ca/",
+            "image": "images/d_and_d_tree_service_web_photo.jpg",
+            "type": 1
+
+          },
+          {
+            "name": "Blue Collar Concrete",
+            "url": "https://bluecollarconcrete.ca/",
+            "image": "images/blue_collar_concrete_web_photo.jpg",
+            "type": 1
+            
+          }
+        ]
+   }
+   
+}
