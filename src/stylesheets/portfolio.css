@@ -61,11 +61,9 @@
   } */
 
 .portfolio-item .item-wrap {
-  background: #fff;
+  background: transparent;
   overflow: hidden;
   position: relative;
-  border-radius: 5%;
-
 }
 
 .portfolio-item .item-wrap a {
