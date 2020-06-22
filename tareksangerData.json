@@ -103,7 +103,7 @@
     "skills": {
           "intro_header": "I'm always learning and expanding my knowledge in design and development tools.",
           "list": [
-            "C", "C++", "Python", "Swift", "Java", "JavaScript", "React", 
+            "C", "C++", "C#", "Python", "Swift", "Java", "JavaScript", "React", 
             "React Native", "CSS", "HTML5", "RESTFul", "Node.js", "Git",
             "MySQL", "MongoDB", "DynamoDB", "Linux", "Prolog", "Haskell",
             "jQuery", "AWS", "Redux", "Nginx", "NPM", "Apache", "Flask (Python)"
